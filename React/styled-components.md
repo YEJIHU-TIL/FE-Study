@@ -1,6 +1,7 @@
 # styled components
 
-- 스타일은 유지하되 태그를 바꾸고 싶은 경우
+- 스타일은 유지하되 태그를 바꾸고 싶은 경우. `as` 사용
+
   ```js
   const Btn = styled.button`
     color: white;
