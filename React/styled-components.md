@@ -15,3 +15,28 @@
   <Btn as="a" href="/">링크</Btn>
   ```
   <img width="156" alt="스크린샷 2022-04-18 오후 11 12 23" src="https://user-images.githubusercontent.com/39231606/163820524-29014171-a25b-4080-86a2-726dce243674.png">
+
+- 속성값 설정 가능
+
+  ```js
+  const Input = styled.input`
+    background-color: tomato;
+  `;
+  ...
+  <Input required/>
+  <Input required/>
+  <Input required/>
+  <Input required/>
+  <Input required/>
+  
+  // 아래처럼 변경 가능
+  const Input = styled.input.attrs({ required: true })`
+    background-color: tomato;
+  `;
+  ...
+  <Input/>
+  <Input/>
+  <Input/>
+  <Input/>
+  <Input/>
+  ```
