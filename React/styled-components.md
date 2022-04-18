@@ -67,3 +67,22 @@
     animation: ${rotation} 1s linear infinite; // 애니메이션 적용
   `;
   ```
+
+- 타겟팅 (일반 태그도 타겟팅이 가능하지만 styled component도 타겟팅이 가능하다.)
+
+  ```js
+  const Emoji = styled.span`
+    font-size: 38px;
+  `;
+  
+  const Box = styled.div`
+    ...
+    p {
+      color: white;
+    }
+    
+    ${Emoji}:hover { 
+      font-size: 98px;
+    }
+  `;
+  ```
